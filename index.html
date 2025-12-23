@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дигитален Албум | Начало</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        // Регистрация на Service Worker за PWA функционалност
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker регистриран успешно:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Грешка при регистрация на Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    
+    
+    <header class="home-header">
+            <img src="Images/Logo-NDOB.png" alt="Вашето Лого" class="home-logo">
+            </header>
+
+        <p class="description">
+            Здравей, пътешественико! <br> Регистрирай се, виж всички лепенки и планирай своето следващо вълнуващо пътешествие! 
+        </p>
+
+        <div class="button-group">
+            <a href="login.html" class="button" style="--button-color: #eec460;">Вход / Регистрация</a>
+             <a href="home.html" class="button" style="--button-color: #eec460;">Временен вход</a>
+           
+        </div>
+    </div>
+</body>
+
+ 
+
+            
+            
+        
+</html>

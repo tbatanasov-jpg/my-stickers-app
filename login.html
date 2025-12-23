@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Дигитален Албум</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+    <script src="https://accounts.google.com/gsi/client" async defer></script> 
+    
+    </head>
+    </head>
+<body class="login-body">
+    <div class="container login-container">
+        
+        <header class="back-navigation">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Назад
+            </a>
+        </header>
+
+        <h1 class="main-title">Вход</h1>
+
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">Имейл</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Парола</label>
+                <input type="password" id="password" name="password" placeholder="Вашата парола" required>
+            </div>
+            
+            <button type="submit" class="button primary-button" style="--button-color: #309e5f;">
+                Вход
+            </button>
+        </form>
+
+        <div class="form-options">
+            <a href="forgot_password.html" class="forgot-password">Забравена парола?</a>
+            
+            <div class="separator">ИЛИ</div>
+            
+            <button class="button google-login-button">
+                <img src="Images/icon-google.png" alt="Google icon" class="google-icon">
+                Вход с Google
+            </button>
+        </div>
+
+        <footer class="register-link-footer">
+            <p>Нямаш профил? <a href="register.html" id="register-link">**Регистрирай се**</a></p>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

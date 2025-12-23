@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта | Дигитален Албум</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="map-body">
+    <div class="container map-container">
+        
+        <header class="main-header map-header">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Назад
+            </a>
+            
+            <div class="sticker-stats-bar">
+                <div class="stat-box" style="--stat-color: #fddf97;">
+                    <span id="stat-have-count-map" class="stat-number">5</span>
+                    <span class="stat-label">Имам</span>
+                </div>
+                <div class="stat-box" style="--stat-color: #c8e4bc;">
+                    <span id="stat-want-count-map" class="stat-number">10</span>
+                    <span class="stat-label">Искам</span>
+                </div>
+                <div class="stat-box" style="--stat-color: #f9bd99;">
+                    <span id="stat-missing-count-map" class="stat-number">12</span>
+                    <span class="stat-label">Нямам</span>
+                </div>
+            </div>
+        </header>
+
+        <h2 class="section-title map-title">КАРТА НА ПЪТЕШЕСТВЕНИКА</h2>
+        
+        <button id="show-objects-btn" class="map-location-trigger-text">
+            Покажи обектите в района
+        </button>
+
+        <main class="map-main-content">
+            <div id="map-canvas" class="map-canvas-placeholder">
+                Зареждане на карта...
+            </div>
+
+            <button id="recenter-location-btn" class="recenter-location-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+            </button>
+        </main>
+        
+    
+        
+    </div>
+
+    <script src="app.js" defer></script>
+    
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUCbi7MrUCMmPkDpxjy9ZguJXu0mJoI4"></script>
+    
+</body>
+</html>

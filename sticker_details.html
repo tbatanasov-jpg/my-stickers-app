@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="detail-title">Детайли | Дигитален Албум</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="details-body">
+    <div class="container details-container">
+        
+        <header class="main-header detail-header">
+            <a href="stickers_list.html" class="back-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Назад
+            </a>
+            
+            <div class="sticker-stats-bar">
+                <div class="stat-box" style="--stat-color: #fddf97;">
+                    <span id="stat-have-count" class="stat-number">5</span>
+                    <span class="stat-label">Имам</span>
+                </div>
+                <div class="stat-box" style="--stat-color: #c8e4bc;">
+                    <span id="stat-want-count" class="stat-number">10</span>
+                    <span class="stat-label">Искам</span>
+                </div>
+                <div class="stat-box" style="--stat-color: #f9bd99;">
+                    <span id="stat-missing-count" class="stat-number">12</span>
+                    <span class="stat-label">Нямам</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="sticker-detail-content">
+
+            <h2 class="detail-full-title" id="detail-full-title" >
+                № 030 Плевен - Плевенска епопея 
+            </h2>
+
+            <div class="image-background-wrapper" id="image-background-wrapper">
+                <div id="large-image-placeholder" class="large-image-placeholder"> 
+                </div>
+
+                <div id="collected-date-display" class="collected-date-overlay">
+                    </div>
+            </div>
+
+            <div class="status-buttons-row">
+                <button class="status-btn" data-status="collected" style="--btn-color: #fddf97;">
+                    <span class="btn-label">Имам</span>
+                </button>
+                <button class="status-btn" data-status="wanted" style="--btn-color: #c8e4bc;">
+                    <span class="btn-label">Искам</span>
+                </button>
+                <button class="status-btn" data-status="missing" style="--btn-color: #f9bd99;">
+                    <span class="btn-label">Нямам</span>
+                </button>
+            </div>
+
+            <p class="detail-description-text" id="detail-description-text">
+                Панорама, изобразяваща битката при Плевен по време на Руско-турската война.
+            </p>
+            <p class="detail-additional-info" id="detail-additional-info">
+                [Този текст ще се попълни от JavaScript]
+            </p>
+
+           
+            
+            
+        </main>
+        
+        <footer class="map-action-footer">
+            <button id="show-route-btn" class="button">
+                <svg class="route-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px" height="20px">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Покажи маршрут
+            </button>
+        </footer>
+
+    </div>
+</body>
+</html>

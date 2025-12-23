@@ -59,6 +59,17 @@
     <script src="app.js" defer></script>
     
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJUCbi7MrUCMmPkDpxjy9ZguJXu0mJoI4"></script>
+
+    <script>
+  // Ако до 2 секунди картата не е заредила, викаме я ръчно
+  setTimeout(() => {
+    if (typeof google !== 'undefined' && typeof initMap === 'function') {
+      initMap();
+    }
+  }, 2000);
+</script>
+    
     
 </body>
+
 </html>

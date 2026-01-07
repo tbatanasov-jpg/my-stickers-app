@@ -4,7 +4,7 @@
 let map;
 
 function initMap() {
-    console.log("!!! ИНИЦИАЛИЗИРАМ КАРТАТА СЕГА !!!"); // Това трябва да се появи в конзолата
+    console.log("!!! ИНИЦИАЛИЗИРАМ КАРТАТА СЕГА !!!");
     
     const mapElement = document.getElementById('map-canvas');
     if (!mapElement) {
@@ -18,6 +18,54 @@ function initMap() {
     });
     
     renderStickerMarkers();
+
+    // --- НОВИЯТ КОД ЗА БУТОНА ЗАПОЧВА ТУК ---
+    const showObjectsBtn = document.getElementById('show-objects-btn');
+
+    if (showObjectsBtn) {
+        showObjectsBtn.addEventListener('click', () => {
+            if (navigator.geolocation) {
+                showObjectsBtn.textContent = "Търся те...";
+
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const userPos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude
+                        };
+
+                        // Центрираме картата върху теб
+                        map.setCenter(userPos);
+                        map.setZoom(14); 
+                        showObjectsBtn.textContent = "Покажи обектите в района";
+
+                        // Опционално: Малък маркер за теб (синя точка)
+                        new google.maps.Marker({
+                            position: userPos,
+                            map: map,
+                            title: "Ти си тук",
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                scale: 8,
+                                fillColor: "#4285F4",
+                                fillOpacity: 1,
+                                strokeWeight: 2,
+                                strokeColor: "white",
+                            }
+                        });
+                    },
+                    (error) => {
+                        showObjectsBtn.textContent = "Покажи обектите в района";
+                        alert("Не можахме да открием местоположението ти. Провери GPS настройките.");
+                        console.error("Грешка при локация:", error);
+                    }
+                );
+            } else {
+                alert("Твоят браузър не поддържа геолокация.");
+            }
+        });
+    }
+    // --- НОВИЯТ КОД ЗАВЪРШВА ТУК ---
 }
 
 // Дефиниране на цветове за статусите

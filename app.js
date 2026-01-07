@@ -42,7 +42,7 @@ const STICKERS_DATA_KEY = 'stickerCollection';
 let allStickers = [
     { 
         id: '001', 
-        title: '- Шипка - Паметник-Шипка', location: 'Стара планина', 
+        title: '- Шипка - Паметник-Шипка', location: 'Шипка', 
         isCollected: true, isWanted: false,
         imagePath: 'Images/Stickers/001.png', 
         description: 'Паметник, посветен на героите, загинали за свободата на България. ',
@@ -66,7 +66,7 @@ let allStickers = [
         coords: { lat: 43.1369, lng: 24.7176 }
     },
     { 
-        id: '004', title: '- Крушуна - Крушунски водопади', location: 'Среден Предбалкан', 
+        id: '004', title: '- Крушуна - Крушунски водопади', location: 'Крушуна', 
         isCollected: false, isWanted: true,
         imagePath: 'Images/Stickers/004.png',
         description: 'Най-голямата водна каскада от травертинови тераси в България.',
@@ -1449,6 +1449,70 @@ let allStickers = [
         additionalInfo: ' В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
         coords: { lat: 42.4774, lng: 22.7492 }
     },
+     { 
+    id: '177', title: '- Приморско - Тракийско светилище "Бегликташ"', location: 'Приморско', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/177.png',
+        description: ' Светилището се състои от централна част и два кръга от по-малки структури около нея. Датирано е от VII век преди Христа. ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(1 юли - 30 септември)<br>08.30 – 20.00 часа<br><br>без почивен ден<br><br><b>Телефон: 056 820 344</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 42.3122, lng: 27.7670 } 
+    },
+    { 
+        id: '178', title: '- Търговище - Славейково училище', location: 'Търговище', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/178.png',
+        description: ' Възрожденско училище, построено през 1863 г. Действащо до 1959 г. През 1963 г. е превърнато в музей.  ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Регионален исторически музей - Търговище<br><br><b>Работно време:</b><br><br>(понеделник - петък)<br>09.00 – 17.30 часа<br><br>събота: 09.30 - 16.00 часа<br>неделя: 09.00 - 13.00 часа<br><br>без почивен ден<br><br><b>Телефон: 0722 667 12</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 43.2423, lng: 26.5713 } 
+    },
+      { 
+    id: '179', title: '- Силистра - Крепост "Меджиди табия"', location: 'Силистра', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/179.png',
+        description: ' Бивша част от османската фортификационна система, използвана по време на Кримската война и Руско-турската война. Построена между 1841 и 1853 г. ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(април - октомври)<br>10.00 – 17.30 часа<br><br>без почивен ден<br><br><b>Телефон: 0878 967 468</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 44.1024, lng: 27.2566 } 
+    },
+    { 
+        id: '180', title: '- Чирпан - Къща музей "Пейо Яворов"', location: 'Чирпан', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/180.png',
+        description: ' Родната къща на поета и революционер, превърната в музей през 1954 г. ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(понеделник - петък)<br>08.00 – 17.00 часа<br><br>(събота и неделя)<br>09.00 - 16.00 часа<br><br>без почивен ден<br><br><b>Телефон: 0889 878 726</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 42.2022, lng: 25.3266 } 
+    },
+       { 
+    id: '181', title: '- Разград - Късноантичен град "Абритус"', location: 'Силистра', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/181.png',
+        description: ' Възниква като тракийско селище. През I век става римски военен лагер, който прераства в град през II век. ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Разград<br><br><b>Работно време:</b><br><br>(април - октомври)<br>09.00 – 17.00 часа<br>без почивен ден<br><br>(ноември - март)<br>09.00 – 17.00 часа<br>събота и неделя:<br>по предварителна заявка<br><br><b>Телефон: 0878 901 431</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 43.5235, lng: 26.5407 } 
+    },
+    { 
+        id: '182', title: '- Разград - Етнографски музей', location: 'Разград', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/182.png',
+        description: ' Разположен е в реставрирани къщи от ХІХ век. Представя традиционната култура на местната етнографска група "капанци". ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Разград<br><br><b>Работно време:</b><br><br>(април - октомври)<br>09.00 – 17.00 часа<br>без почивен ден<br><br>(ноември - март)<br>09.00 – 17.00 часа<br>събота и неделя:<br>по предварителна заявка<br><br><b>Телефон: 0878 901 431</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 43.5268, lng: 26.5306 } 
+    },
+        { 
+    id: '183', title: '- Разград - Късноантичен град "Абритус"', location: 'Силистра', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/183.png',
+        description: ' Възниква като тракийско селище. През I век става римски военен лагер, който прераства в град през II век. ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Разград<br><br><b>Работно време:</b><br><br>(април - октомври)<br>09.00 – 17.00 часа<br>без почивен ден<br><br>(ноември - март)<br>09.00 – 17.00 часа<br>събота и неделя:<br>по предварителна заявка<br><br><b>Телефон: 0878 901 431</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 43.5235, lng: 26.5407 } 
+    },
+    { 
+        id: '184', title: '- Разград - Етнографски музей', location: 'Разград', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Stickers/184.png',
+        description: ' Разположен е в реставрирани къщи от ХІХ век. Представя традиционната култура на местната етнографска група "капанци". ',
+        additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Разград<br><br><b>Работно време:</b><br><br>(април - октомври)<br>09.00 – 17.00 часа<br>без почивен ден<br><br>(ноември - март)<br>09.00 – 17.00 часа<br>събота и неделя:<br>по предварителна заявка<br><br><b>Телефон: 0878 901 431</b><br><br><br><br><br><br>.' ,
+        coords: { lat: 43.5268, lng: 26.5306 } 
+    },
     // Добави останалите лепенки тук...
 ];
 
@@ -2099,15 +2163,25 @@ function renderStickerMarkers() {
             });
             
             // Добавяме инфо прозорец при клик
-            const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="font-size: 0.9em; color: #333; padding: 5px;">
-                        <b>№${sticker.id} ${sticker.title}</b>
-                        <p style="margin: 5px 0 0;">Статус: ${markerColor}</p>
-                        <a href="sticker_details.html?id=${sticker.id}" target="_self">Виж детайли</a>
-                    </div>
-                `
-            });
+        const infoWindow = new google.maps.InfoWindow({
+    content: `
+        <div style="font-size: 0.9em; color: #333; padding: 5px; text-align: center; max-width: 150px;">
+            <b>№${sticker.id} ${sticker.title}</b>
+            
+            <div style="margin: 8px 0;">
+                <img src="${sticker.imagePath}" 
+                     alt="${sticker.title}" 
+                     style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            </div>
+
+            <p style="margin: 5px 0 5px;">Статус: ${markerColor}</p>
+            
+            <a href="sticker_details.html?id=${sticker.id}" target="_self" style="font-weight: bold; color: #007bff;">
+                Виж детайли
+            </a>
+        </div>
+    `
+});
 
             marker.addListener('click', () => {
                 infoWindow.open(map, marker);

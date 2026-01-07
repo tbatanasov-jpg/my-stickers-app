@@ -2163,25 +2163,22 @@ function renderStickerMarkers() {
             });
             
             // Добавяме инфо прозорец при клик
-        const infoWindow = new google.maps.InfoWindow({
-    content: `
-        <div style="font-size: 0.9em; color: #333; padding: 5px; text-align: center; max-width: 150px;">
-            <b>№${sticker.id} ${sticker.title}</b>
-            
-            <div style="margin: 8px 0;">
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="font-size: 0.9em; color: #333; padding: 5px;">
+                        <b>№${sticker.id} ${sticker.title}</b>
+
+                        <div style="margin: 8px 0;">
                 <img src="${sticker.imagePath}" 
                      alt="${sticker.title}" 
                      style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-            </div>
+                         </div>
 
-            <p style="margin: 5px 0 5px;">Статус: ${markerColor}</p>
-            
-            <a href="sticker_details.html?id=${sticker.id}" target="_self" style="font-weight: bold; color: #007bff;">
-                Виж детайли
-            </a>
-        </div>
-    `
-});
+                        <p style="margin: 5px 0 0;">Статус: ${markerColor}</p>
+                        <a href="sticker_details.html?id=${sticker.id}" target="_self">Виж детайли</a>
+                    </div>
+                `
+            });
 
             marker.addListener('click', () => {
                 infoWindow.open(map, marker);

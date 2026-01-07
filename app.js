@@ -2136,6 +2136,8 @@ function handleShowRoute(destinationCoords) {
  */
 function renderStickerMarkers() {
     if (!map) return;
+
+    let activeInfoWindow = null; // Тук ще пазим текущо отворения прозорец
     
     // Забележка: За да отразим промените в статуса на картата без презареждане, 
     // трябва да изчистим/обновим маркерите. Тъй като не пазим маркерите в масив, 
@@ -2180,9 +2182,18 @@ function renderStickerMarkers() {
                 `
             });
 
-            marker.addListener('click', () => {
-                infoWindow.open(map, marker);
-            });
+            marker.addListener("click", () => {
+    // 1. Ако вече има отворен прозорец, затвори го
+    if (activeInfoWindow) {
+        activeInfoWindow.close();
+    }
+
+    // 2. Отвори текущия прозорец
+    infoWindow.open(map, marker);
+
+    // 3. Запомни, че този прозорец е вече "активният"
+    activeInfoWindow = infoWindow;
+});
         }
     });
 }

@@ -844,9 +844,12 @@ h2.section-title {
 
 /* Основна секция за картата */
 .map-main-content {
-    flex-grow: 1; /* Заема цялото оставащо вертикално пространство */
-    position: relative; /* Важно за позициониране на иконата за геолокация */
-    overflow: hidden; /* За да не излиза картата извън рамката */
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 /* Промененият контейнер на картата */

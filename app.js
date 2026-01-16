@@ -2374,6 +2374,36 @@ function renderStickerMarkers() {
                 title: sticker.title,
                 icon: iconUrl
             });
+
+            // Твоята логика за InfoWindow (запази я същата)
+            const infoWindow = new google.maps.InfoWindow({
+                content: `<h3>${sticker.title}</h3>` 
+            });
+
+            marker.addListener("click", () => {
+                if (activeInfoWindow) activeInfoWindow.close();
+                infoWindow.open(map, marker);
+                activeInfoWindow = infoWindow;
+            });
+
+            // 2. Добавяме маркера в масива вместо директно на картата
+            markers.push(marker);
+        }
+    });
+
+    // 3. ТАЗИ ЧАСТ ПРАВИ КЛЪСТЕРИТЕ (Добави я точно тук, преди последната скоба на функцията)
+    if (typeof markerClusterer !== 'undefined') {
+        new markerClusterer.MarkerClusterer({
+            map: map,
+            markers: markers
+        });
+    } else {
+        console.error("Библиотеката за клъстеризация не е заредена!");
+        // Резервен вариант: ако библиотеката липсва, покажи маркерите нормално
+        markers.forEach(m => m.setMap(map));
+    }
+} // Край на функцията
+
             
             // Добавяме инфо прозорец при клик
             const infoWindow = new google.maps.InfoWindow({

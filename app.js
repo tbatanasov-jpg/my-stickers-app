@@ -2366,7 +2366,7 @@ function renderStickerMarkers() {
             
             // Взимаме цвета от STATUS_COLORS за по-добра визия
             const iconFile = markerColor === 'collected' ? 'green' : (markerColor === 'wanted' ? 'yellow' : 'red');
-            const iconUrl = `http://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
+            const iconUrl = `https://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
 
             const marker = new google.maps.Marker({
                 position: { lat: parseFloat(sticker.coords.lat), lng: parseFloat(sticker.coords.lng) },
@@ -2738,7 +2738,7 @@ if (window.location.pathname.includes('home.html')) {
 // app.js
 
 const GOOGLE_CLIENT_ID = "ВАШИЯТ_CLIENT_ID_ОТ_GOOGLE"; // <-- СМЕНЕТЕ ТОВА!
-const GOOGLE_REDIRECT_URI = "http://localhost:8080/home.html"; // Сменете с Вашия redirect URL
+const GOOGLE_REDIRECT_URI = "https://localhost:8080/home.html"; // Сменете с Вашия redirect URL
 
 function handleGoogleLogin() {
     // 1. Конфигуриране на Auth Request

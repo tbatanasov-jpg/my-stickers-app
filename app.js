@@ -2345,7 +2345,6 @@ function handleShowRoute(destinationCoords) {
  * Добавя маркери за всички лепенки, които имат координати.
  */
 function renderStickerMarkers() {
-    const markers = []; // 1. Създаваме празен списък за маркерите
     if (!map) return;
 
     let activeInfoWindow = null; // Тук ще пазим текущо отворения прозорец
@@ -2366,50 +2365,19 @@ function renderStickerMarkers() {
             
             // Взимаме цвета от STATUS_COLORS за по-добра визия
             const iconFile = markerColor === 'collected' ? 'green' : (markerColor === 'wanted' ? 'yellow' : 'red');
-            const iconUrl = `https://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
+            const iconUrl = `http://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
 
             const marker = new google.maps.Marker({
                 position: { lat: parseFloat(sticker.coords.lat), lng: parseFloat(sticker.coords.lng) },
-                
+                map: map,
                 title: sticker.title,
                 icon: iconUrl
             });
-
-            // Твоята логика за InfoWindow (запази я същата)
-            const infoWindow = new google.maps.InfoWindow({
-                content: `<h3>${sticker.title}</h3>` 
-            });
-
-            marker.addListener("click", () => {
-                if (activeInfoWindow) activeInfoWindow.close();
-                infoWindow.open(map, marker);
-                activeInfoWindow = infoWindow;
-            });
-
-            // 2. Добавяме маркера в масива вместо директно на картата
-            markers.push(marker);
-        }
-    });
-
-    // 3. ТАЗИ ЧАСТ ПРАВИ КЛЪСТЕРИТЕ (Добави я точно тук, преди последната скоба на функцията)
-    if (typeof markerClusterer !== 'undefined') {
-        new markerClusterer.MarkerClusterer({
-            map: map,
-            markers: markers
-        });
-    } else {
-        console.error("Библиотеката за клъстеризация не е заредена!");
-        // Резервен вариант: ако библиотеката липсва, покажи маркерите нормално
-        markers.forEach(m => m.setMap(map));
-    }
-} // Край на функцията
-
             
             // Добавяме инфо прозорец при клик
             const infoWindow = new google.maps.InfoWindow({
-                
                 content: `
-                    <div style="font-size: 0.9em; color: #272525; padding: 5px;">
+                    <div style="font-size: 0.9em; color: #333; padding: 5px;">
                         <b>№${sticker.id} ${sticker.title}</b>
 
                         <div style="margin: 8px 0;">
@@ -2423,7 +2391,6 @@ function renderStickerMarkers() {
                     </div>
                 `
             });
-            
 
             marker.addListener("click", () => {
     // 1. Ако вече има отворен прозорец, затвори го
@@ -2431,15 +2398,15 @@ function renderStickerMarkers() {
         activeInfoWindow.close();
     }
 
-    
-
     // 2. Отвори текущия прозорец
     infoWindow.open(map, marker);
 
     // 3. Запомни, че този прозорец е вече "активният"
     activeInfoWindow = infoWindow;
 });
-
+        }
+    });
+}
 
 /**
  * Обработва заявката за позициониране на картата спрямо текущото местоположение.
@@ -2736,7 +2703,7 @@ if (window.location.pathname.includes('home.html')) {
 // app.js
 
 const GOOGLE_CLIENT_ID = "ВАШИЯТ_CLIENT_ID_ОТ_GOOGLE"; // <-- СМЕНЕТЕ ТОВА!
-const GOOGLE_REDIRECT_URI = "https://localhost:8080/home.html"; // Сменете с Вашия redirect URL
+const GOOGLE_REDIRECT_URI = "http://localhost:8080/home.html"; // Сменете с Вашия redirect URL
 
 function handleGoogleLogin() {
     // 1. Конфигуриране на Auth Request

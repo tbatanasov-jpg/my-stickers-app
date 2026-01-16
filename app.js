@@ -2370,7 +2370,7 @@ function renderStickerMarkers() {
 
             const marker = new google.maps.Marker({
                 position: { lat: parseFloat(sticker.coords.lat), lng: parseFloat(sticker.coords.lng) },
-                map: map,
+                
                 title: sticker.title,
                 icon: iconUrl
             });

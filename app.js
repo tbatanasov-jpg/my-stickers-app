@@ -2348,25 +2348,15 @@ function handleShowRoute(destinationCoords) {
 function renderStickerMarkers() {
     if (!map) return;
 
-    // 1. Списък, в който ще съберем всички маркери
     const markers = [];
     let activeInfoWindow = null;
 
     allStickers.forEach(sticker => {
         if (sticker.coords && sticker.coords.lat && sticker.coords.lng) {
             
-            // Определяме цвета (твоята логика)
-            let iconFile = 'red'; // по подразбиране
-            if (sticker.isCollected) {
-                iconFile = 'green';
-            } else if (sticker.isWanted) {
-                iconFile = 'yellow';
-            }
-            
-            // Коректен URL за иконките на Google
+            let iconFile = sticker.isCollected ? 'green' : (sticker.isWanted ? 'yellow' : 'red');
             const iconUrl = `http://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
 
-            // 2. Създаваме маркера, но НЕ му подаваме map: map веднага
             const marker = new google.maps.Marker({
                 position: { 
                     lat: parseFloat(sticker.coords.lat), 
@@ -2376,15 +2366,8 @@ function renderStickerMarkers() {
                 icon: iconUrl
             });
 
-            // Логика за прозореца с информация
             const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="color: #333; padding: 5px;">
-                        <h3 style="margin: 0 0 5px 0;">${sticker.title}</h3>
-                        <p style="margin: 0;">Номер: ${sticker.number || 'N/A'}</p>
-                        <a href="details.html?id=${sticker.id}" style="color: #309e5f; font-weight: bold; text-decoration: none;">Виж детайли</a>
-                    </div>
-                `
+                content: `<div><h3>${sticker.title}</h3></div>`
             });
 
             marker.addListener("click", () => {
@@ -2393,18 +2376,15 @@ function renderStickerMarkers() {
                 activeInfoWindow = infoWindow;
             });
 
-            // 3. Добавяме маркера в масива
             markers.push(marker);
-        }
-    });
+        } // <--- Край на if (sticker.coords...)
+    }); // <--- Край на allStickers.forEach
 
-    // 4. ИНИЦИАЛИЗИРАМЕ КЛЪСТЕРИЗАЦИЯТА
-    // Това ще групира маркерите автоматично
     new markerClusterer.MarkerClusterer({
         map: map,
         markers: markers
     });
-}
+} // <--- КРАЙ НА ФУНКЦИЯТА (Провери дали точно тази скоба не липсва!)
             
             // Добавяме инфо прозорец при клик
             const infoWindow = new google.maps.InfoWindow({
@@ -2436,9 +2416,8 @@ function renderStickerMarkers() {
     // 3. Запомни, че този прозорец е вече "активният"
     activeInfoWindow = infoWindow;
 });
-        }
-    });
-}
+
+
 
 /**
  * Обработва заявката за позициониране на картата спрямо текущото местоположение.

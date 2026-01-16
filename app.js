@@ -2376,23 +2376,40 @@ function renderStickerMarkers() {
             });
             
             // Добавяме инфо прозорец при клик
-   const infoWindow = new google.maps.InfoWindow({
-            content: `<h3>${sticker.title}</h3><p>${sticker.description}</p>`
-        });
+            const infoWindow = new google.maps.InfoWindow({
+                
+                content: `
+                    <div style="font-size: 0.9em; color: #272525; padding: 5px;">
+                        <b>№${sticker.id} ${sticker.title}</b>
 
-        marker.addListener("click", () => {
-            if (activeInfoWindow) activeInfoWindow.close();
-            infoWindow.open(map, marker);
-            activeInfoWindow = infoWindow;
-        });
+                        <div style="margin: 8px 0;">
+                <img src="${sticker.imagePath}" 
+                     alt="${sticker.title}" 
+                     style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                         </div>
 
-        markers.push(marker); // 2. Добавяме маркера в списъка
-    });
+                        <p style="margin: 5px 0 0;">Статус: ${markerColor}</p>
+                        <a href="sticker_details.html?id=${sticker.id}" target="_self">Виж детайли</a>
+                    </div>
+                `
+            });
+            
 
-    // 3. Инициираме клъстеризацията
-    new markerClusterer.MarkerClusterer({
-        map: map,
-        markers: markers
+            marker.addListener("click", () => {
+    // 1. Ако вече има отворен прозорец, затвори го
+    if (activeInfoWindow) {
+        activeInfoWindow.close();
+    }
+
+    
+
+    // 2. Отвори текущия прозорец
+    infoWindow.open(map, marker);
+
+    // 3. Запомни, че този прозорец е вече "активният"
+    activeInfoWindow = infoWindow;
+});
+        }
     });
 }
 

@@ -2,6 +2,7 @@
 
 // Глобална променлива за картата (използва се във stickers_map.html)
 let map;
+/* global google, markerClusterer */
 
 function initMap() {
     console.log("!!! ИНИЦИАЛИЗИРАМ КАРТАТА СЕГА !!!");
@@ -2347,32 +2348,63 @@ function handleShowRoute(destinationCoords) {
 function renderStickerMarkers() {
     if (!map) return;
 
-    let activeInfoWindow = null; // Тук ще пазим текущо отворения прозорец
-    
-    // Забележка: За да отразим промените в статуса на картата без презареждане, 
-    // трябва да изчистим/обновим маркерите. Тъй като не пазим маркерите в масив, 
-    // ще приемем, че тази функция се вика само веднъж при зареждане.
+    // 1. Списък, в който ще съберем всички маркери
+    const markers = [];
+    let activeInfoWindow = null;
 
     allStickers.forEach(sticker => {
         if (sticker.coords && sticker.coords.lat && sticker.coords.lng) {
             
-            let markerColor = 'missing';
+            // Определяме цвета (твоята логика)
+            let iconFile = 'red'; // по подразбиране
             if (sticker.isCollected) {
-                markerColor = 'collected';
+                iconFile = 'green';
             } else if (sticker.isWanted) {
-                markerColor = 'wanted';
+                iconFile = 'yellow';
             }
             
-            // Взимаме цвета от STATUS_COLORS за по-добра визия
-            const iconFile = markerColor === 'collected' ? 'green' : (markerColor === 'wanted' ? 'yellow' : 'red');
+            // Коректен URL за иконките на Google
             const iconUrl = `http://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
 
+            // 2. Създаваме маркера, но НЕ му подаваме map: map веднага
             const marker = new google.maps.Marker({
-                position: { lat: parseFloat(sticker.coords.lat), lng: parseFloat(sticker.coords.lng) },
-                map: map,
+                position: { 
+                    lat: parseFloat(sticker.coords.lat), 
+                    lng: parseFloat(sticker.coords.lng) 
+                },
                 title: sticker.title,
                 icon: iconUrl
             });
+
+            // Логика за прозореца с информация
+            const infoWindow = new google.maps.InfoWindow({
+                content: `
+                    <div style="color: #333; padding: 5px;">
+                        <h3 style="margin: 0 0 5px 0;">${sticker.title}</h3>
+                        <p style="margin: 0;">Номер: ${sticker.number || 'N/A'}</p>
+                        <a href="details.html?id=${sticker.id}" style="color: #309e5f; font-weight: bold; text-decoration: none;">Виж детайли</a>
+                    </div>
+                `
+            });
+
+            marker.addListener("click", () => {
+                if (activeInfoWindow) activeInfoWindow.close();
+                infoWindow.open(map, marker);
+                activeInfoWindow = infoWindow;
+            });
+
+            // 3. Добавяме маркера в масива
+            markers.push(marker);
+        }
+    });
+
+    // 4. ИНИЦИАЛИЗИРАМЕ КЛЪСТЕРИЗАЦИЯТА
+    // Това ще групира маркерите автоматично
+    new markerClusterer.MarkerClusterer({
+        map: map,
+        markers: markers
+    });
+}
             
             // Добавяме инфо прозорец при клик
             const infoWindow = new google.maps.InfoWindow({
@@ -2404,9 +2436,8 @@ function renderStickerMarkers() {
     // 3. Запомни, че този прозорец е вече "активният"
     activeInfoWindow = infoWindow;
 });
-        }
-    });
-}
+    
+
 
 /**
  * Обработва заявката за позициониране на картата спрямо текущото местоположение.

@@ -708,15 +708,13 @@ function handleShowRoute(destinationCoords) {
 function renderStickerMarkers() {
     if (!map) return;
 
-    let activeInfoWindow = null; // Тук ще пазим текущо отворения прозорец
-    
-    // Забележка: За да отразим промените в статуса на картата без презареждане, 
-    // трябва да изчистим/обновим маркерите. Тъй като не пазим маркерите в масив, 
-    // ще приемем, че тази функция се вика само веднъж при зареждане.
+    let activeInfoWindow = null;
+    const markers = []; // Тук ще събираме обектите за клъстеризатора
 
     allStickers.forEach(sticker => {
         if (sticker.coords && sticker.coords.lat && sticker.coords.lng) {
             
+            // 1. Твоята оригинална логика за статуса
             let markerColor = 'missing';
             if (sticker.isCollected) {
                 markerColor = 'collected';
@@ -724,49 +722,57 @@ function renderStickerMarkers() {
                 markerColor = 'wanted';
             }
             
-            // Взимаме цвета от STATUS_COLORS за по-добра визия
             const iconFile = markerColor === 'collected' ? 'green' : (markerColor === 'wanted' ? 'yellow' : 'red');
-            const iconUrl = `http://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
+            // Оправено на https и правилен синтаксис
+            const iconUrl = `https://maps.google.com/mapfiles/ms/icons/${iconFile}-dot.png`;
 
+            // 2. Създаваме маркера (забележи: махаме map: map, за да го контролира клъстеризатора)
             const marker = new google.maps.Marker({
                 position: { lat: parseFloat(sticker.coords.lat), lng: parseFloat(sticker.coords.lng) },
-                map: map,
                 title: sticker.title,
                 icon: iconUrl
             });
             
-            // Добавяме инфо прозорец при клик
+            // 3. Твоят оригинален Info Window (със снимката и стиловете)
             const infoWindow = new google.maps.InfoWindow({
                 content: `
                     <div style="font-size: 0.9em; color: #333; padding: 5px;">
                         <b>№${sticker.id} ${sticker.title}</b>
-
                         <div style="margin: 8px 0;">
-                <img src="${sticker.imagePath}" 
-                     alt="${sticker.title}" 
-                     style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-                         </div>
-
+                            <img src="${sticker.imagePath}" 
+                                 alt="${sticker.title}" 
+                                 style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                        </div>
                         <p style="margin: 5px 0 0;">Статус: ${markerColor}</p>
                         <a href="sticker_details.html?id=${sticker.id}" target="_self">Виж детайли</a>
                     </div>
                 `
             });
 
+            // Твоят Listener за затваряне на стария прозорец
             marker.addListener("click", () => {
-    // 1. Ако вече има отворен прозорец, затвори го
-    if (activeInfoWindow) {
-        activeInfoWindow.close();
-    }
+                if (activeInfoWindow) {
+                    activeInfoWindow.close();
+                }
+                infoWindow.open(map, marker);
+                activeInfoWindow = infoWindow;
+            });
 
-    // 2. Отвори текущия прозорец
-    infoWindow.open(map, marker);
-
-    // 3. Запомни, че този прозорец е вече "активният"
-    activeInfoWindow = infoWindow;
-});
+            // 4. ДОБАВЯМЕ МАРКЕРА В СПИСЪКА
+            markers.push(marker);
         }
     });
+
+    // 5. ИНИЦИАЛИЗИРАМЕ КЛЪСТЕРИТЕ (СЪС ЗАЩИТА)
+    if (typeof markerClusterer !== 'undefined' && markers.length > 0) {
+        new markerClusterer.MarkerClusterer({
+            map: map,
+            markers: markers
+        });
+    } else {
+        // Ако нещо се обърка с библиотеката, ги показваме по стария начин
+        markers.forEach(m => m.setMap(map));
+    }
 }
 
 /**

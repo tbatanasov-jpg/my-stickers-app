@@ -1207,3 +1207,38 @@ function setupScrollFooterToggle() {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 }
+
+function updateHomeStats() {
+    // Използваме точните ID-та от твоя home.html
+    const haveElem = document.getElementById('home-stat-collected');
+    const wantElem = document.getElementById('home-stat-wanted');
+    const missingElem = document.getElementById('home-stat-missing');
+
+    // Ако не сме на началната страница, спираме
+    if (!haveElem) return;
+
+    let have = 0;
+    let want = 0;
+    let missing = 0;
+
+    // Броим лепенките от allStickers (която идва от data.js)
+    allStickers.forEach(sticker => {
+        if (sticker.isCollected) {
+            have++;
+        } else if (sticker.isWanted) {
+            want++;
+        } else {
+            missing++;
+        }
+    });
+
+    // Записваме резултатите
+    haveElem.textContent = have;
+    wantElem.textContent = want;
+    missingElem.textContent = missing;
+    
+    console.log("Статистиката за Home е обновена успешно!");
+}
+
+// Извикваме я при зареждане
+document.addEventListener('DOMContentLoaded', updateHomeStats);

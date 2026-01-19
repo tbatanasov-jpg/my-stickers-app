@@ -780,7 +780,7 @@ h2.section-title {
 .show-route-btn {
     position: fixed; 
     bottom: 20px; 
-    width: 95%; 
+    width: 70%; 
     max-width: 560px;
     left: 50%;
     transform: translateX(-50%); 
@@ -794,6 +794,7 @@ h2.section-title {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .route-icon {

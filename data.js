@@ -68,7 +68,7 @@ let allStickers = [
     },
     { 
         id: '009', title: '- Пирин - Роженски манастир', location: 'Пирин планина', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/009.png',
         description: 'Най-големият манастир в Пиринския край.',
         additionalInfo: 'В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -84,7 +84,7 @@ let allStickers = [
     },
       { 
         id: '011', title: '- Пловдив - Античен театър', location: 'Пловдив', 
-        isCollected: true, isWanted: false, 
+        isCollected: false, isWanted: false, 
         imagePath: 'Images/Stickers/011.png',
         description: 'Един от най-добре запазените антични театри в света и сред основните туристически атракции на Пловдив.',
         additionalInfo: 'В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -100,7 +100,7 @@ let allStickers = [
     },
         { 
         id: '013', title: '- Рила - Рилски езера', location: 'Рила', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/013.png',
         description: 'Седемте рилски езера са група езера с ледников произход, разположена в Рила планина.',
         additionalInfo: 'В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -116,7 +116,7 @@ let allStickers = [
     },
         { 
         id: '015', title: '- София - Храм-паметник "Св. Александър Невски"', location: 'София', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/015.png',
         description: 'Православен храм-паметник в центъра на София. Църквата е проектирана и изградена в периода 1882 – 1912 г., а през 1955 г. Катедрален храм на българския патриарх.',
         additionalInfo: 'В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -132,7 +132,7 @@ let allStickers = [
     },
          { 
         id: '017', title: '- Враца - Рогозенско съкровище', location: 'Враца', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/017.png',
         description: 'Рóгозенското съкровище е тракийско сребърно съкровище, открито през 1986 година в село Рогозен.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Враца<br><br><b>Работно време:</b><br><br>(понеделник – петък):<br> 09.00 – 17.30 часа<br><br>(почивни и празнични дни):<br>09.00 – 12.00 и 13.00 – 17.30 часа<br><br><b>Телефон: 092 620 220</b><br><br><br><br><br><br>.' ,
@@ -148,7 +148,7 @@ let allStickers = [
     },
         { 
         id: '019', title: ' - Карлово - Национален музей "Васил Левски"', location: 'Карлово', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/019.png',
         description: 'Национален музей „Васил Левски“ в Карлово се помещава в родната къща на българския национален герой Васил Левски. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>08.30 – 13.00 ч. и 14.00 – 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 033 593 489</b><br><br><br><br><br><br>.' ,
@@ -164,7 +164,7 @@ let allStickers = [
     },
           { 
         id: '021', title: '- Добърско - Църква „Св. св. Теодор Тирон и Теодор Стратилат“', location: 'Добърско', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/021.png',
         description: 'Православна църква, в която има запазени изключително ценни стенописи. Построена през 1614 г.  ',
         additionalInfo: 'В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -180,7 +180,7 @@ let allStickers = [
     },
         { 
         id: '023', title: '- Несебър - Музей "Старинен Несебър"', location: 'Несебър', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/023.png',
         description: 'Музеят обхваща цялата територия на Старият град в Несебър.  ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>летен сезон (1 април – 1 ноември) 09.30 до 17.30 часа<br><br>зимен сезон (1 ноември – 1 април) 09.00 до 17.00 часа.<br><br>почивен ден: понеделник<br><br><b>Телефон: 088 574 3672</b><br><br><br><br><br><br>.' ,
@@ -196,7 +196,7 @@ let allStickers = [
     },
        { 
         id: '025', title: '- Калофер - Национален музей "Христо Ботев"', location: 'Калофер', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/025.png',
         description: 'Музеят включва в себе си мемориална къща музей, изложбена зала, паметник на Христо Ботев и паметник на Иванка Ботева – майка на поета.  ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(летен сезон)<br>8.30 ч – 12.00 и 13.00 – 17.30 часа<br><br>(зимен сезон)<br>08.30 – 12.00 и 12.30 – 17.00 часа<br><br>без почивен ден.<br><br><b>Телефон: 031 335 271</b><br><br><br><br><br><br>.' ,
@@ -212,7 +212,7 @@ let allStickers = [
     },
           { 
         id: '027', title: '- Стоб - Стобски пирамиди', location: 'Стоб', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/027.png',
         description: 'Пирамидите предствляват композиция от остри и игловидни пирамидални или конусовидни земни форми.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса или туристическия информационен център в село Стоб<br><br><b>Телефони: 0887 198 698 / 0887 204 118</b><br><br><br><br><br><br>.' ,
@@ -228,7 +228,7 @@ let allStickers = [
     },
            { 
         id: '029', title: '- Орешак - Троянски манастир', location: 'Орешак', 
-        isCollected: true, isWanted: false, 
+        isCollected: false, isWanted: false, 
         imagePath: 'Images/Stickers/029.png',
         description: 'Манастир „Успение Богородично“ е ставропигиален манастир на Българската православна църква, основан в края на XVI век. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>зимен сезон (вторник - неделя):<br>09.00 - 17.00 часа<br><br>летен сезон (вторник - неделя)<br>09.00 - 18.00 часа<br><br>почивен ден - понеделник.<br><br><b>Телефон: 032 625 654</b><br><br><br><br><br><br>.' ,
@@ -244,7 +244,7 @@ let allStickers = [
     },
              { 
         id: '031', title: '- Бургас - Остров "Света Анастасия"', location: 'Бургас', 
-        isCollected: true, isWanted: false, 
+        isCollected: false, isWanted: false, 
         imagePath: 'Images/Stickers/031.png',
         description: 'Островът се намира в Бургаския залив в Черно море. На него има построен манастир, носещ същото име. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>през летния туристически сезон - <br><br>всеки ден от 10:00 до 20:00 часа<br><br><b>Телефон: 0882 004 124</b><br><br><br><br><br><br>.' ,
@@ -260,7 +260,7 @@ let allStickers = [
     },
               { 
         id: '033', title: '- Златоград - Етнографски комплекс', location: 'Златоград', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/033.png',
         description: 'Първият в България частен етнографски комплекс. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса в Етнографски музей - Златоград<br><br><b>Работно време:</b><br><br>09.00 до 17.00 часа<br><br>почивен ден: вторник<br><br><b>Телефон: 030 712 136</b><br><br><br><br><br><br>.' ,
@@ -276,7 +276,7 @@ let allStickers = [
     },
              { 
         id: '035', title: '- Кюстендил - Регионален исторически музей', location: 'Кюстендил', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/035.png',
         description: 'Един от най-старите и най-големи музеи в България. Носи името на видния български историк, археолог и фолклорист Йордан Иванов. Създаден е през 1897 г. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(лeтен сезон)<br>9.30 ч. - 12.00 ч. и 12.30 ч. - 18.00 ч.<br><br>(зимен сезон)<br>09.30 ч. - 12.00 ч. и 12.30 ч. - 17.00 ч.<br><br>без почивен ден<br><br><b>Телефон: 078 55 00 95 / 078 55 00 98</b><br><br><br><br><br><br>.' ,
@@ -292,7 +292,7 @@ let allStickers = [
     },
     { 
         id: '037', title: '- Боженци - Център', location: 'Боженци', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/037.png',
         description: 'Архитектурно-исторически резерват, разположен на около 9 км от град Габрово. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>Лeтен сезон (1 юли - 15 септември):<br>08.30 ч.  -  18.45 часа<br><br>Зимен сезон (16 септември - 31 юни):<br>08:30 ч. – 17:15 часа<br><br>без почивен ден<br><br><b>Телефон: 0878 716 290</b><br><br><br><br><br><br>.' ,
@@ -308,7 +308,7 @@ let allStickers = [
     },
                 { 
         id: '039', title: '- Казанлък - Тракийска гробница', location: 'Казанлък', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/039.png',
         description: 'Зидана кръглокуполна гробница в град Казанлък. Част от голям некропол, разположен в близост до древната столица на Одриското царство Севтополис. Построена е през IV век преди Христа. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>09.00 до 17.30 часа<br><br>без почивен ден<br><br><b>Телефон: 0431 647 50</b><br><br><br><br><br><br>.' ,
@@ -324,7 +324,7 @@ let allStickers = [
     },
      { 
         id: '041', title: '- Пещера "Магура"', location: 'Белоградчик', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/041.png',
         description: 'Пещера, образувана от карстови процеси. Състои се от 13 зали и галерии. По стените има рисунки от няколко исторически епохи.  ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(1 април - 30 октомври): 10.00 - 17.00 ч.<br><br>(1 ноември до 31 март): 10.00 - 16.00 ч.<br><br>без почивен ден<br><br><b>Телефон: 093 296 677</b><br><br><br><br><br><br>.' ,
@@ -340,7 +340,7 @@ let allStickers = [
     },
      { 
         id: '043', title: '- Панагюрище - Къща музей "Райна Княгиня"', location: 'Панагюрище', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/043.png',
         description: 'Родната къща на Райна Княгиня превърната в музей. Построена е през 1673 г. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от сувенирния магазин в двора на Исторически музей - Панагюрище.<br><br><b>Работно време:</b><br><br>вторник - неделя: 09.30 – 17.00 часа<br><br>понеделник: 12.00 - 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 035 763 646</b><br><br><br><br><br><br>.' ,
@@ -356,7 +356,7 @@ let allStickers = [
     },
         { 
         id: '045', title: '- Кърджали - Каменна сватба', location: 'Кърджали', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/045.png',
         description: 'Природен феномен, разположен на площ от около 40 декара. Най-открояващи са две 10-метрови скали, наподобяващи прегърнати младоженци. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от сувенирен павилион пред входа на Регионален исторически музей - Кърджали<br><br><b>Работно време:</b><br><br>вторник - неделя:<br>09.00-12.00 и 13.00-17.00 часа<br><br>почивен ден - понеделник<br><br><br><br><br><br>.' ,
@@ -372,7 +372,7 @@ let allStickers = [
     },
           { 
         id: '047', title: '- Пещера "Снежанка"', location: 'Батак', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/047.png',
         description: 'Богата на сталагмити, сталактити и сталактони пещера. Открита през 1961 г. Получава името си заради пещерните форми, наподобяващи приказната героиня.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>Летен сезон: 10.00 - 17.15 часа<br>Зимен сезон: 10.00 - 15.15 часа<br><br>без почивен ден<br><br><b>Телефон: 0896 715 972</b><br><br><br><br><br><br>.' ,
@@ -388,7 +388,7 @@ let allStickers = [
     },
            { 
         id: '049', title: '- Копривщица - Къща музей "Димчо Дебелянов"', location: 'Копривщица', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/049.png',
         description: 'Родната къща на поета, превърната в музей, посветен на живота и творчеството му.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>Лятно (1 април – 1 ноември)<br>09.30 до 17.30 часа<br><br>Зимно (1 ноември – 1 април)<br>09.00 до 17.00 часа.<br><br>почивен ден: понеделник<br><br><b>Телефон: 0887 743 661</b><br><br><br><br><br><br>.' ,
@@ -404,7 +404,7 @@ let allStickers = [
     },
             { 
         id: '051', title: '- Плиска - Голямата Базилика', location: 'Плиска', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/051.png',
         description: 'Най-голямата базилика в средновековна Европа, построена около 875 г.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(ноември - март) 08.30 - 17.00 часа<br><br>(април - октомври)08.30 - 19.00 часа<br><br>без почивен ден<br><br><b>Телефон: 053 232 012 | 0893 342 224</b><br><br><br><br><br><br>.' ,
@@ -420,7 +420,7 @@ let allStickers = [
     },
         { 
         id: '053', title: '- Триград - Пещера "Дяволско гърло"', location: 'Триград', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/053.png',
         description: 'Пропастна пещера, формирана вследствие на пропадането на земните пластове. Основната ѝ част представлява голяма зала, в която се намира най-високият подземен водопад на Балканския полуостров.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от сувенирен павилион, намиращ се над входа <br><br><b>Работно време:</b><br><br>летен сезон (май - септември):<br>09.00 - 17.00 часа<br><br>зимен сезон (октомври - април):<br>10.00 до 16.00 часа<br><br>без почивен ден<br><br>Влиза се на всеки кръгъл час.<br><br><br><br><br><br>.' ,
@@ -436,7 +436,7 @@ let allStickers = [
     },
         { 
         id: '055', title: '- Русе - Регионален исторически музей', location: 'Русе', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/055.png',
         description: 'Основан е през 1904 г. В него се съхраняват около 140 000 фондови единици.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>09.00 - 18.00 часа<br><br>без почивен ден<br><br><b>Телефон: 082 830 996</b><br><br><br><br><br><br>.' ,
@@ -452,7 +452,7 @@ let allStickers = [
     },
         { 
         id: '057', title: '- Кърджали - Регионален исторически музей', location: 'Кърджали', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/057.png',
         description: 'Разположен в старинна триетажна сграда, построена в началото на 1920-те години. Музеят съдържа над 45 хиляди експоната.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от сувенирния павилион пред входа на музея<br><br><b>Работно време:</b><br><br>09.00-12.00 и 13.00-17.00 часа<br><br>почивен ден: понеделник</b><br><br><br><br><br><br>.' ,
@@ -468,7 +468,7 @@ let allStickers = [
     },
          { 
     id: '059', title: '- Ягодинска пещера', location: 'Ягодина', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/059.png',
         description: 'Пещера, богата на сталактити, сталагмити и сталактони. Дълга е 10 км и е разположена на три етажа. ',
         additionalInfo: ' В момента лепенкaтa може да бъде закупена само от Издателство БЪЛГАРИ<br><br><b>www.bulgaran.com</b><br><br><b>info@bulgaran.com</b><br><br><b>Телефон: 0893 306 145 / 0898 808 833</b><br><br><br><br><br><br>.' ,
@@ -484,7 +484,7 @@ let allStickers = [
     },
         { 
     id: '061', title: '- Чавдар - Археологически парк "Тополница"', location: 'Чавдар', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/061.png',
         description: 'Реконструкция на намерените останки от раннонеолитно селище, датирано от преди 7000 години. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса на парка<br><br><b>Работно време:</b><br><br>09.30 – 18.30 часа<br><br>без почивен ден<br><br><b>Телефон: 0882 935 336</b><br><br><br><br><br><br>.' ,
@@ -500,7 +500,7 @@ let allStickers = [
     },
         { 
     id: '063', title: '- Ивайловград - Вила "Армира"', location: 'Ивайловград', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/063.png',
         description: 'Антична римска вила, представляваща комплекс от жилищни и стопански постройки, разположени на площ от 2200 m2. Била е обитавана до IV век.',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>09.00 до 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 03661 60-26 / 0882 296 410</b><br><br><br><br><br><br>.' ,
@@ -516,7 +516,7 @@ let allStickers = [
     },
         { 
     id: '065', title: '- Медвен - Къща музей "Захари Стоянов"', location: 'Медвен', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/065.png',
         description: 'Родната къща на революционера и политик, превърната в музей.',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(сряда - неделя)<br>08.00 - 12.00 и 13.00 - 17.00 часа<br><br>почивни дни: понеделник и вторник<br><br><b>Телефон: 0876 002 429</b><br><br><br><br><br><br>.' ,
@@ -532,7 +532,7 @@ let allStickers = [
     },
     { 
     id: '067', title: '- Русе - Паметник на Свободата', location: 'Русе', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/067.png',
         description: 'Проектиран в началото на XX век от Арналдо Дзоки и изработен от Георги Киселинчев. Статуята на върха представлява жена, която държи меч в лявата си ръка, а с дясната сочи към Европа.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Регионален исторически музей - Русе<br><br><b>Работно време:</b><br><br>09.00ч. - 18.00 часа<br><br>без почивен ден<br><br><b>Телефон: 082 830 996</b><br><br><br><br><br><br>.' ,
@@ -548,7 +548,7 @@ let allStickers = [
     },
         { 
     id: '069', title: '- Стара Загора - МК "Бранителите на Стара Загора"', location: 'Стара Загора', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/069.png',
         description: 'Паметникът представлява бетонна конструкция, висока 50 м. Има формата на развято знаме - Самарското знаме на опълченците.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Регионален исторически музей - Стара Загора<br><br><b>Работно време:</b><br><br>вторник - неделя: 10.00 - 18.00 часа<br><br>почивен ден: понеделник<br><br><b>Телефон: 042 919 201</b><br><br><br><br><br><br>.' ,
@@ -564,7 +564,7 @@ let allStickers = [
     },
         { 
     id: '071', title: '- Етрополе - Исторически музей', location: 'Етрополе', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/071.png',
         description: 'Музеят съхранява и артефакти, документи и фотоси от културното и историческо наследство на Етрополе.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(понеделник - събота)<br>08.00 – 12.00 и 13.00 – 17.00 часа<br><br>(неделя)<br>09.00 – 15.00 часа<br><br>без почивен ден<br><br><b>Телефон: 072 062 124</b><br><br><br><br><br><br>.' ,
@@ -580,7 +580,7 @@ let allStickers = [
     },
           { 
     id: '073', title: '- Стара Загора - Античен форум "Августа Траяна"', location: 'Стара Загора', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/073.png',
         description: 'Археологически обект, намиращ се  в централната част на града. Представлява полукръгъл площад с постамент на императорска статуя.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Регионален исторически музей - Стара Загора<br><br><b>Работно време:</b><br><br>вторник - неделя: 10.00 - 18.00 часа<br><br>почивен ден: понеделник<br><br><b>Телефон: 042 919 201</b><br><br><br><br><br><br>.' ,
@@ -596,7 +596,7 @@ let allStickers = [
     },
     { 
     id: '075', title: '- Дряново - Музей "Колю Фичето"', location: 'Дряново', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/075.png',
         description: 'Експозиция на историческия музей в град Дряново, посветена на живота и дейността на майстор Кольо Фичето. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Дряново.<br><br><b>Работно време:</b><br><br>08.00 ч. - 12.00 ч. и 13.00 ч. – 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 0676 7 20 97</b><br><br><br><br><br><br>.' ,
@@ -612,7 +612,7 @@ let allStickers = [
     },
     { 
     id: '077', title: '- Жеравна - Художествена галерия', location: 'Жеравна', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/077.png',
         description: ' Помещава се в сградата на взаимното училище от 1867г. Фондът на галерията включва над 400 творби. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>(вторник до неделя)<br>09.00 - 12.30 и 13.30 - 17.00 часа<br><br>почивен ден: понеделник<br><br><b>Телефон: 045 85 22 02</b><br><br><br><br><br><br>.' ,
@@ -628,7 +628,7 @@ let allStickers = [
     },
       { 
     id: '079', title: '- Панагюрище - "Лекова къща"', location: 'Панагюрище', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/079.png',
         description: ' Възрожденска къща, построена след Кримската война. В салона ѝ е изрисувано „Колелото на живота“. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от сувенирния магазин в двора на Исторически музей - Панагюрище.<br><br><b>Работно време:</b><br><br>09.00 – 17.00 часа<br><br>без почивен ден.<br><br><b>Телефон: 0357 6 20 12 и 0357 6 37 12</b><br><br><br><br><br><br>.' ,
@@ -644,7 +644,7 @@ let allStickers = [
     },
        { 
     id: '081', title: '- Стара Загора - Музей "Неолитни жилища"', location: 'Стара Загора', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/081.png',
         description: '  В музея се намират 2 жилища от новокаменната епоха. Създаден е през 1979 г. ',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Регионален исторически музей - Стара Загора<br><br><b>Работно време:</b><br><br>вторник - неделя: 10.00 - 18.00 часа<br><br>почивен ден: понеделник<br><br><b>Телефон: 042 919 201</b><br><br><br><br><br><br>.' ,
@@ -660,7 +660,7 @@ let allStickers = [
     },
     { 
     id: '083', title: '- Котел - Пантеон "Георги Раковски"', location: 'Котел', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/083.png',
         description: '  Помещава се в обща сграда с експозицията „Котленски възрожденци“. Открит е през 1981 г. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>Зимен сезон:<br>08.00 - 12.00 и 13.00-17.00 часа<br><br>Летен сезон:<br>09.00 - 18.00 часа<br><br>без почивен ден<br><br><b>Телефон: 045 342 549</b><br><br><br><br><br><br>.' ,
@@ -676,7 +676,7 @@ let allStickers = [
     },
         { 
     id: '085', title: '- Сливен - Къща музей "Сливенски бит"', location: 'Сливен', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/085.png',
         description: '  Помещава се в две съседни възрожденски къщи - Патковата и Арнаутовата, преустроени в музеи през 1963 и 1969 г.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(1 ноември – 31 март)<br>вторник - събота<br>09.00 - 12.00 и 13.00 - 17.00 часа<br><br>почивни дни: неделя и понеделник<br><br><b>Телефон: 044 622 494</b><br><br><br><br><br><br>.' ,
@@ -692,7 +692,7 @@ let allStickers = [
     },
     { 
     id: '087', title: '- Елена - Църква "Успение на Пресвета Богородица"', location: 'Елена', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/087.png',
         description: '  Уникален паметник на възрожденската архитектура и изкуство. Построена е през 1838 г. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от църковния магазин на храмa, Архитектурно - исторически комплекс „Даскалоливница”<br><br><b>Работно време:</b><br><br>09.30-12.00 и 13.30-17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 06151 61 29</b><br><br><br><br><br><br>.' ,
@@ -708,7 +708,7 @@ let allStickers = [
     },
       { 
     id: '089', title: '- Боженци - Къща музей "Дончо Попа"', location: 'Боженци', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/089.png',
         description: '  Къщата на един от най-богатите търговци на вълна и кожи от началото на XIX век. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>летен сезон: (1 юли - 15 септември)<br>08.30  -  18.45 часа<br><br>зимен сезон: (16 септември - 31 юни)<br>08:30 ч. – 17:15 часа<br><br>без почивен ден<br><br><b>Телефон: 0878 716 290</b><br><br><br><br><br><br>.' ,
@@ -724,7 +724,7 @@ let allStickers = [
     },
           { 
     id: '091', title: '- Етрополе - Водопад "Варовитец"', location: 'Етрополе', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/091.png',
         description: '  Kрасив и живописен водопад,  образуващ се от протичаща покрай Етрополския манастир река. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса на Исторически музей - Етрополе<br><br><b>Работно време:</b><br><br>(понеделник - събота)<br>08.00 – 12.00 и 13.00 – 17.00 часа<br><br>(неделя)<br>09.00 – 15.00 часа<br><br>без почивен ден<br><br><b>Телефон: 072 062 124</b><br><br><br><br><br><br>.' ,
@@ -740,7 +740,7 @@ let allStickers = [
     },
             { 
     id: '093', title: '- Момчилград  - Тракийско светилище "Татул"', location: 'Момчилград', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/093.png',
         description: '  Праисторическо скално-култово светилище, считано за едно от най-значимите светилища на Орфей.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от сувенирният магазин, намиращ се до Исторически музей в град Кърджали<br><br><b>Работно време:</b><br><br>вторник - неделя:<br>09.00-12.00 и 13.00-17.00 часа<br><br>почивен ден - понеделник<br><br><br><br><br><br>.' ,
@@ -756,7 +756,7 @@ let allStickers = [
     },
     { 
     id: '095', title: '- Котел  - Кьорпеева къща', location: 'Котел', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/095.png',
         description: '  Праисторическо скално-култово светилище, считано за едно от най-значимите светилища на Орфей.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>понеделник - петък:<br>09.00 - 17.00 часа<br><br>почивни дни: събота и неделя<br><br><br><b>Телефон: 045 342 315</b><br><br><br><br><br><br>.' ,
@@ -772,7 +772,7 @@ let allStickers = [
     },
     { 
     id: '097', title: '- Панагюрище - Тутева къща', location: 'Панагюрище', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/097.png',
         description: '  Възрожденска къща, построена от Иван Тутев - занаятчия, търговец и революционер, участник в Априлското въстание.   ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от сувенирния магазин в двора на Исторически музей - Панагюрище.<br><br><b>Работно време:</b><br><br>09.00 – 17.00 часа<br><br>без почивен ден.<br><br><b>Телефон: 0357 6 20 12 и 0357 6 37 12</b><br><br><br><br><br><br>.' ,
@@ -788,7 +788,7 @@ let allStickers = [
     },
      { 
     id: '099', title: '- Сопот - "Сопотски еснаф"', location: 'Сопот', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/099.png',
         description: '  Сдружение на сопотските майстори и ценители на художествените занаяти. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>08.30 - 17.00 часа<br><br>без почивен ден.<br><br><b>Телефон: 0878 532 082</b><br><br><br><br><br><br>.' ,
@@ -804,7 +804,7 @@ let allStickers = [
     },
         { 
     id: '101', title: '- Котел - Галатанско училище', location: 'Котел', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/101.png',
         description: '  Двуетажна къща, която по време на Възраждането е била център на просветната дейност. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>летен сезон (1 май - 31 октомври)<br>09.00 - 18.00 часа<br><br>зимен сезон (1 ноември - 30 април)<br>08.00 - 12.00 ч. и 13.00 - 17.00 часа<br><br>почивни дни: неделя и понеделник<br><br><b>Телефон: 045 342 549</b><br><br><br><br><br><br>.' ,
@@ -820,7 +820,7 @@ let allStickers = [
     },
     { 
     id: '103', title: '- Жеравна - Къща музей "Йордан Йовков"', location: 'Жеравна', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/103.png',
         description: '  Двуетажна къща, която по време на Възраждането е била център на просветната дейност. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>летен сезон (1 май - 31 октомври)<br>09.00 - 18.00 часа<br><br>зимен сезон (1 ноември - 30 април)<br>08.00 - 12.00 ч. и 13.00 - 17.00 часа<br><br>почивни дни: неделя и понеделник<br><br><b>Телефон: 045 342 549</b><br><br><br><br><br><br>.' ,
@@ -836,7 +836,7 @@ let allStickers = [
     },
         { 
     id: '105', title: '- Елена - Къща музей "Иларион Макариополски"', location: 'Елена', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/105.png',
         description: ' Родната къща на епископа на Цариградската патриаршия, превърната в музей. ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>летен сезон (1 май - 31 октомври)<br>09.00 - 12.00 и 13.00 - 17.30 часа<br><br>зимен сезон (1 ноември - 30 април)<br>08.30 - 12.00 ч. и 13.00 - 17.30 часа<br><br>без почивен ден<br><br><b>Телефон: 061 51 61 29</b><br><br><br><br><br><br>.' ,
@@ -852,7 +852,7 @@ let allStickers = [
     },
             { 
     id: '107', title: '- Сливен - Регионален исторически музей', location: 'Сливен', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/107.png',
         description: ' Една от най-старите институции в града. Основан е през 1913 г.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>09.00 - 12.00 и 13.00 - 17.30 часа<br><br>почивни дни: неделя и понеделник<br><br><b>Телефон: 044 622 494</b><br><br><br><br><br><br>.' ,
@@ -868,7 +868,7 @@ let allStickers = [
     },
     { 
     id: '109', title: '- Панагюрище - Исторически музей', location: 'Панагюрище', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/109.png',
         description: ' Музеен комплекс, разположен във възрожденски къщи на именити панагюрци.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от сувенирния магазин в двора на музея.<br><br><b>Работно време:</b><br><br>09.00 - 17.00 часа<br><br>понеделник - санитарен полуден до 12.30 ч.<br><br>без почивен ден<br><br><b>Телефон: 0357 63 712</b><br><br><br><br><br><br>.' ,
@@ -884,7 +884,7 @@ let allStickers = [
     },
       { 
     id: '111', title: '- Боженци - Къща музей "Баба Райна"', location: 'Боженци', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/111.png',
         description: ' Една от най-старите запазени сгради в селото, от втората половина на XVIII в.  ',
         additionalInfo: '  Лепенкaтa може да бъде закупена от билетната каса.<br><br><b>Работно време:</b><br><br>летен сезон (1 юли - 15 септември)<br>08.30  -  18.45 часа<br><br>зимен сезон (16 септември - 31 юни)<br>08:30 - 17:15 часа<br><br>без почивен ден<br><br><b>Телефон: 0878 716 290</b><br><br><br><br><br><br>.' ,
@@ -900,7 +900,7 @@ let allStickers = [
     },
        { 
     id: '113', title: '- Панагюрище - Дудекова къща', location: 'Панагюрище', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/113.png',
         description: ' Къщата е част от музейния комплекс. Представя етнографско-историческа експозиция, отразяваща възрожденския бит и култура.',
         additionalInfo: '   Лепенкaтa може да бъде закупена от сувенирния магазин в двора на Исторически музей - Панагюрище.<br><br><b>Работно време:</b><br><br>09.30 – 17.00 часа<br><br>понеделник: 12.30 - 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 035 763 712</b><br><br><br><br><br><br>.' ,
@@ -916,7 +916,7 @@ let allStickers = [
     },
     { 
     id: '115', title: '- Боженци - Работилница "Менгема"', location: 'Боженци', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/115.png',
         description: ' Къщата е част от музейния комплекс. Представя етнографско-историческа експозиция, отразяваща възрожденския бит и култура.',
         additionalInfo: '   Лепенкaтa може да бъде закупена от сувенирния магазин в двора на Исторически музей - Панагюрище.<br><br><b>Работно време:</b><br><br>09.30 – 17.00 часа<br><br>понеделник: 12.30 - 17.00 часа<br><br>без почивен ден<br><br><b>Телефон: 035 763 712</b><br><br><br><br><br><br>.' ,
@@ -980,7 +980,7 @@ let allStickers = [
     },
           { 
     id: '123', title: '- Правец - Исторически музей', location: 'Правец', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/123.png',
         description: ' Музеят съдържа културни ценности от региона. Открит е през 1981 г.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(понеделник - петък) 08.30 - 17.30 часа<br><br>(събота и неделя) 09.30 - 17.30 часа<br><br>без почивен ден<br><br><b>Телефон: 0879 688 803</b><br><br><br><br><br><br>.' ,
@@ -996,7 +996,7 @@ let allStickers = [
     },
     { 
     id: '125', title: '- Мездра - Археологически комплекс "Калето"', location: 'Мездра', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/125.png',
         description: ' Комплексът на хълма съхранява 70 вековната история на две укрепени селища, съществували на това място.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>09.00 - 18.00 часа<br><br>почивен ден: понеделник<br><br><b>Телефон: 091 093 059</b><br><br><br><br><br><br>.' ,
@@ -1012,7 +1012,7 @@ let allStickers = [
     },
        { 
     id: '127', title: '- Чѐрвен - Средновековен град "Чѐрвен"', location: 'Червен', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/127.png',
         description: ' Построен първоначално като ранновизантийска крепост (6 век), през XII-XIV век се разширява до средновековен град.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса<br><br><b>Работно време:</b><br><br>(март – ноември) 09.00 - 18.00 часа<br><br>без почивен ден<br><br><b>Телефон: 0815 61 26</b><br><br><br><br><br><br>.' ,
@@ -1028,7 +1028,7 @@ let allStickers = [
     },
     { 
     id: '129', title: '- Троян - Къща музей "Иван Хаджийски"', location: 'Троян', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/129.png',
         description: ' Родната къща на социолога и публицист, превърната в музей през 80-те години на ХХ век.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от билетната каса на Музей на народните художествени занаяти - Троян<br><br><b>Работно време:</b><br><br>(април - октомври)<br>09.00 – 17.00 часа<br>без почивен ден<br><br>(ноември - март)<br>понеделник-петък: 09.00 – 17.00 часа<br>събота: 10.00 - 15.00 часа<br>неделя: по предварителна заявка<br><br><b>Телефон: 067062063 и 0878668789</b><br><br><br><br><br><br>.' ,
@@ -1044,7 +1044,7 @@ let allStickers = [
     },
     { 
     id: '131', title: '- Лютиброд - Скален феномен "Ритлите"', location: 'Лютиброд', 
-        isCollected: true, isWanted: false,
+        isCollected: false, isWanted: false,
         imagePath: 'Images/Stickers/131.png',
         description: ' Образувани преди около 120 милиона години. Най-ясно изразени са четири успоредни, отвесни скални стени.',
         additionalInfo: ' Лепенкaтa може да бъде закупена от Посетителски център "Ритлите"<br><br><b>Работно време:</b><br><br>(събота и неделя) 09.00 до 17.00 часа<br><br>През останалите дни може да бъде закупена от билетната каса на Археологически комплекс "Калето" - град Мездра<br><br><b>Телефон: 091 093 059</b><br><br><br><br><br><br>.' ,

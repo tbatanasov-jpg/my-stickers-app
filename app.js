@@ -1075,7 +1075,7 @@ const GOOGLE_REDIRECT_URI = "http://localhost:5500"; // Сменете с Ваш
 function handleGoogleLogin() {
     // 1. Конфигуриране на Auth Request
     const client = google.accounts.oauth2.initCodeClient({
-        client_id: 1062635467678-qqdd4a79tkb99sdmcr6n6a8g3hpe6brl.apps.googleusercontent.com,
+        client_id: "1062635467678-qqdd4a79tkb99sdmcr6n6a8g3hpe6brl.apps.googleusercontent.com",
         scope: 'email profile', // Искаме достъп до имейла и профила
         ux_mode: 'popup', // Използваме изскачащ прозорец
         redirect_uri: GOOGLE_REDIRECT_URI,

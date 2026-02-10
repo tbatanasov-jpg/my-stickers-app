@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начало | Моята Колекция</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <div class="home-wrapper">
+        
+        <header class="home-header">
+            <img src="Images/Logo-NDOB-Small.png" alt="Вашето Лого" class="home-logo">
+            </header>
+
+        <main class="home-main-content">
+            
+           <div class="user-profile-section">
+    
+    <div class="profile-picture-wrapper">
+        <img id="profile-picture" src="Images/Photo.png" alt="Профилна снимка" class="profile-img">
+        
+        <input type="file" id="file-input" accept="image/*" style="display: none;">
+    </div>
+    
+    <p class="greeting-text-large">Здравей, <span id="user-name">Колекционер</span>!</p>
+</div>
+
+            <div class="stats-grid">
+                
+                <div class="stat-card stat-collected">
+                    <p class="stat-label">Имам</p>
+                    <p class="stat-value" id="home-stat-collected">0</p>
+                </div>
+
+                <div class="stat-card stat-wanted">
+                    <p class="stat-label">Искам</p>
+                    <p class="stat-value" id="home-stat-wanted">0</p>
+                </div>
+
+                <div class="stat-card stat-missing">
+                    <p class="stat-label">Нямам</p>
+                    <p class="stat-value" id="home-stat-missing">0</p>
+                </div>
+                
+            </div>
+
+           <div class="button-group home-nav-group">
+                
+                
+                
+                <a href="stickers_list.html" class="button home-nav-btn" id="all-stickers-nav-btn">
+                    Всички лепенки
+                </a>
+
+                <a href="stickers_map.html" class="button home-nav-btn" id="map-nav-btn">
+                    Карта с лепенки
+                </a>
+
+                <a href="home.html" class="button home-nav-btn" id="map-nav-btn">
+                    Начало
+                </a>
+                
+            </div>
+
+        </main>
+
+        
+
+        <footer class="home-footer">
+            <p>Copyright &copy; Издателство Българи</p>
+        </footer>
+
+    </div>
+
+    <script src="data.js?v=1.0"></script>
+    <script src="app.js?v=1.1"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списък с Лепенки | Дигитален Албум</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    
+</head>
+<body class="list-body">
+    <div class="container list-container">
+        
+        <header class="main-header">
+            <a href="home_books.html" class="back-link">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Назад
+            </a>
+            
+          <div class="sticker-stats-bar">
+        <div class="stat-box" style="--stat-color: #fddf97;">
+        <span id="home-stat-collected" class="stat-number">0</span> <span class="stat-label">Имам</span>
+        </div>
+        <div class="stat-box" style="--stat-color: #c8e4bc;">
+        <span id="home-stat-wanted" class="stat-number">0</span>    <span class="stat-label">Искам</span>
+        </div>
+        <div class="stat-box" style="--stat-color: #f9bd99;">
+        <span id="home-stat-missing" class="stat-number">0</span>   <span class="stat-label">Нямам</span>
+        </div>
+    </div>
+        </header>
+
+        <h2 class="section-title">ВСИЧКИ КНИЖКИ</h2>
+
+        <div class="search-bar">
+            <input type="text" id="sticker-search-input" placeholder="Търсене по място или номер...">
+            <button id="search-button" class="search-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="filter-controls">
+    <label for="sticker-filter">Филтриране по статус:</label>
+    <select id="sticker-filter">
+        <option value="all">Всички</option>
+        <option value="collected">Имам</option>
+        <option value="wanted">Искам</option>
+        <option value="missing">Нямам</option>
+    </select>
+</div>
+        <main class="stickers-main-content">
+            <div id="books-grid" class="stickers-grid">
+                <p class="loading-message">Зареждане на колекцията...</p>
+                </div>
+        </main>
+        
+        <nav class="tab-bar" fixed-spacing="15px">
+            <a href="home_books.html" class="tab-item">Начало</a>
+            <a href="books_list.html" class="tab-item">Горе</a>
+            <a href="books_map.html" class="tab-item">Карта</a>
+        </nav>
+        
+    </div>
+
+    </div> 
+
+     <script src="data_books.js"></script>
+     <script src="app_books.js"></script>
+   
+
+</body>
+</html>

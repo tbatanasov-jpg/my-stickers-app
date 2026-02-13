@@ -114,101 +114,9 @@ function renderStickers(stickers) {
     // ...
 }
 
-// app.js (Във функцията renderStickerDetails)
 
-// app.js
 
-function renderStickerDetails(stickerId) {
-    const sticker = allBooks.find(s => s.id === stickerId);
-    if (!sticker) return;
 
-    const displayId = book.id.toString().replace('b', '');
-    const fullTitleElement = document.getElementById('detail-full-title');
-    
-    // Взимаме заглавието и премахваме началното "- "
-    let cleanTitle = sticker.title.startsWith('- ') ? sticker.title.substring(2) : sticker.title;
-    
-    // Разделяме низа по ПЪРВОТО " - " на две части: [Мястото], [Обекта]
-    // split(' - ', 2) гарантира, че низът се разделя най-много веднъж
-    const firstDelimiterIndex = cleanTitle.indexOf(' - ');
-
-    if (firstDelimiterIndex > -1) {
-        // Първа част (която остава болд)
-        const boldPart = cleanTitle.substring(0, firstDelimiterIndex).trim(); 
-        
-        // Втора част (която ще бъде нормална). Включва и " - " за разделител
-        const normalPartWithDelimiter = cleanTitle.substring(firstDelimiterIndex).trim(); 
-        
-        // Генериране на HTML с клас .normal-text
-        fullTitleElement.innerHTML = `
-            № ${sticker.id} ${boldPart} 
-            <span class="normal-text">${normalPartWithDelimiter}</span>
-        `;
-    } else {
-        // Ако няма разделител, показваме целия текст болд (резервен вариант)
-        fullTitleElement.innerHTML = `№ ${sticker.id} ${cleanTitle}`;
-    }
-
-    // Актуализиране на <title> на страницата
-    document.getElementById('detail-title').textContent = `${sticker.title} | Дигитален Албум`;
-
-    const imagePlaceholder = document.getElementById('large-image-placeholder');
-    if (imagePlaceholder) {
-        // Изчистване на placeholder-а, ако има старо съдържание
-        imagePlaceholder.innerHTML = ''; 
-
-        // Създаване на <img> елемент
-        const image = document.createElement('img');
-        
-        // 1. Път до снимката
-        image.src = `Images/Books/${sticker.id}.png`; // Приемете, че пътят е такъв
-        
-        // 2. ID за забрана на десен клик в DOMContentLoaded
-        image.id = 'sticker-image'; 
-        
-        // 3. Клас за стилизиране
-        image.classList.add('large-sticker-image'); // Уверете се, че използвате правилния клас
-        
-        // 4. 🔑 КЛЮЧОВАТА АТРИБУТ ЗА ЗАБРАНА НА ВЛАЧЕНЕ
-        image.setAttribute('draggable', 'false'); 
-        
-        // Добавяне на елемента към HTML-а
-        imagePlaceholder.appendChild(image);
-    }
-    
-    // ... останалата част от renderStickerDetails ...
-}
-
-function handleStatusChange(stickerId, newStatus) {
-    const sticker = allBooks.find(s => s.id === stickerId);
-    if (!sticker) return;
-
-    // 1. Нулиране на всички статуси
-    sticker.isCollected = false;
-    sticker.isWanted = false;
-
-    // 2. Задаване на новия статус
-    if (newStatus === 'collected') {
-        sticker.isCollected = true;
-        sticker.collectedDate = new Date().toLocaleDateString('bg-BG'); 
-    } else if (newStatus === 'wanted') {
-        sticker.isWanted = true;
-        sticker.collectedDate = null; 
-    } else { // missing
-        sticker.collectedDate = null; 
-    }
-    
-    // 3. Запазване на промените в Local Storage
-    saveStickers(); // Използвайте saveStickers(), ако saveStickersToLocalStorage() е псевдоним
-    
-    // 💡 КЛЮЧОВА КОРЕКЦИЯ: ПРЕИЗЧИСЛЯВАНЕ И ОБНОВЯВАНЕ НА СТАТИСТИКАТА ВЕДНАГА!
-    updateStickerStats(); 
-    
-    // 4. Обновяване на изгледа на детайлите
-    if (window.location.pathname.includes('books_details.html')) {
-        renderBooksDetails(stickerId); // Този ред ще обнови бутоните и информацията
-    }
-}
 
 
 // --- ФУНКЦИИ ЗА РАБОТА С LOCAL STORAGE (ПЕРСИСТЕНТНОСТ) ---
@@ -282,7 +190,7 @@ function handleStatusChange(stickerId, newStatus) {
     
     // ... (останалата част от функцията) ...
     if (window.location.pathname.includes('books_details.html')) {
-        renderBooksDetails(stickerId);
+        renderStickerDetails(stickerId);
     }
 
   }
@@ -367,7 +275,10 @@ function renderBookGrid(stickersToRender = allBooks) {
 
     gridElement.innerHTML = ''; 
 
+    
+
     stickersToRender.forEach(sticker => {
+        const displayId = sticker.id.toString().replace(/b/gi, '');
         const card = document.createElement('div');
         card.className = 'sticker-card';
         card.setAttribute('data-id', sticker.id);
@@ -384,16 +295,16 @@ function renderBookGrid(stickersToRender = allBooks) {
         
         
         // Прилагане на стила директно в HTML
-        card.innerHTML = `
-            <div class="sticker-image-placeholder" style="background-color: ${backgroundColor};">
-                <img src="Images/Books/${sticker.id}.png" alt="${sticker.title}" class="sticker-img">
-            </div>
-            
-            <div class="sticker-action-row">
-                <p class="sticker-number">№${sticker.id}</p>
-                <button class="open-button" data-id="${sticker.id}">Отвори</button>
-            </div>
-        `;
+      card.innerHTML = `
+        <div class="sticker-image-placeholder" style="background-color: ${backgroundColor};">
+            <img src="Images/Books/${sticker.id}.png" alt="${sticker.title}" class="sticker-img">
+        </div>
+        
+        <div class="sticker-action-row">
+            <p class="sticker-number">№${displayId}</p>
+            <button class="open-button" data-id="${sticker.id}">Отвори</button>
+        </div>
+    `;
 
         // Слушател 1: За клик върху цялата картичка (за детайли), освен бутона
         card.addEventListener('click', (e) => {
@@ -588,12 +499,40 @@ function renderStickerDetails() {
     
     // 🚨 ТУК ИЗПОЛЗВАМЕ АКТУАЛИЗИРАНИЯ allBooks, благодарение на loadStickers()
     const sticker = allBooks.find(s => s.id === stickerId);
+
+    // Махаме "b" от ID-то за показване
+    const displayId = sticker.id.toString().replace('b', '');
+
+    // Попълваме в HTML-а
+    const idElem = document.getElementById('detail-id');
+    if (idElem) {
+        idElem.textContent = `Книжка №${displayId}`;
+    }
+    
+    // Ако искаш и в заглавието на таба да е само числото:
+    document.title = `Книжка №${displayId} | Детайли`;
     
     if (!sticker) {
          console.error(`Лепенка с ID ${stickerId} не е намерена!`);
          // Връщаме се към списъка, ако ID-то е невалидно
-         window.location.href = 'stickers_list.html';
+         window.location.href = 'books_list.html';
          return;
+
+         // Чак сега обработваме ID-то за показване
+    // Използваме /b/gi, което е регулярен израз за "намери всички 'b' без значение малки или големи"
+    const displayId = sticker.id.toString().replace(/b/gi, '');
+
+    // Попълваме в HTML-а
+    const idElem = document.getElementById('detail-id');
+    if (idElem) {
+        idElem.textContent = `Книжка №${displayId}`;
+    }
+    
+    // Актуализиране на заглавието на таба
+    document.title = `Книжка №${displayId} | Детайли`;
+
+    // Тук продължава останалата част от кода ти за заглавие, описание и т.н.
+    // ...
     }
 
     
@@ -855,6 +794,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (forgotPasswordForm) {
         forgotPasswordForm.addEventListener('submit', handleForgotPassword);
     }
+
+    if (window.location.pathname.includes('books_details.html')) {
+    renderBookDetails(); // Извикваме новата функция
+}
   // БЛОК ЗА СТРАНИЦАТА СЪС СПИСЪКА (stickers_list.html)
 if (window.location.pathname.includes('books_list.html')) {
     
@@ -868,36 +811,7 @@ if (window.location.pathname.includes('books_list.html')) {
     setupScrollFooterToggle(); 
 }
 
-// ✅ ЕДИНСТВЕН БЛОК за страницата за ДЕТАЙЛИ (sticker_details.html)
-if (window.location.pathname.includes('books_details.html')) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const stickerId = urlParams.get('id');
-    if (stickerId) {
-        // 💡 КОРЕКЦИЯ: Първо обновяваме статистиката, 
-        // за да се покажат правилните стойности при зареждане
-        updateStickerStats(); 
-        
-        renderStickerDetails(stickerId);
-    }
 
-    // 🔑 ТОВА ТРЯБВА ДА НАМЕРИ СЪЗДАДЕНОТО ИЗОБРАЖЕНИЕ
-        const imageElement = document.getElementById('sticker-image'); 
-        
-        if (imageElement) {
-            // ✅ contextmenu е за десния клик на десктоп
-            imageElement.addEventListener('contextmenu', (event) => {
-                event.preventDefault(); 
-            });
-            
-            // 💡 ВАЖНО: За мобилни устройства (дълго натискане),
-            // обикновено е достатъчно contextmenu, но някои браузъри 
-            // може да изискват допълнителна забрана за user-select в CSS.
-            
-        } else {
-             // ❌ Ако влезете тук, imageElement не е намерен!
-             console.error('Не мога да намеря елемента #sticker-image!');
-        }
-}
 
     // app.js (Вътре в DOMContentLoaded или основния setup)
 
@@ -1290,3 +1204,65 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHomeStats();
     }
 });
+
+/**
+ * Основна функция за показване на детайлите на книгата
+ */
+function renderBookDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookId = urlParams.get('id'); 
+    
+    // Търсим в allBooks (увери се, че това е името в data_books.js)
+    const book = allBooks.find(b => b.id === bookId);
+
+    if (!book) {
+        console.error("Книгата не е намерена!");
+        return;
+    }
+
+    // --- ЗАГЛАВИЕ ---
+    const titleElem = document.getElementById('detail-full-title');
+    if (titleElem) {
+        const cleanId = book.id.toString().replace(/b/gi, ''); 
+        titleElem.innerHTML = `№ ${cleanId} <b>${book.title}</b>`;
+    }
+
+    // --- 2. СНИМКА И ЦВЯТ (Ползваме оригиналното ID 'b001' за файла) ---
+    const imagePlaceholder = document.getElementById('large-image-placeholder');
+    if (imagePlaceholder) {
+        // Проверка за статус (оцветяване)
+        const isCollected = book.collected || false; 
+        const bgColor = isCollected ? '#e8f5e9' : '#f5f5f5';
+
+        imagePlaceholder.innerHTML = `
+            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <img src="Images/Books/${book.id}.png" 
+                     id="sticker-image" 
+                     style="max-width: 100%; max-height: 250px; width: auto; height: auto; object-fit: contain; display: block;"
+                     onerror="console.error('Липсва файл: ' + this.src)">
+            </div>
+        `;
+    }
+
+// --- ОПИСАНИЕ И ИНФО ---
+    const descElem = document.getElementById('detail-description-text');
+if (descElem) {
+    // Променяме .textContent на .innerHTML
+    descElem.innerHTML = book.description || "Няма описание.";
+}
+
+    const infoElem = document.getElementById('detail-additional-info');
+    // Променяме от .textContent на .innerHTML
+    infoElem.innerHTML = book.additionalInfo || "Информационното табло е налично на място в обекта.";
+}
+
+// 2. Инициализация при зареждане на страницата
+document.addEventListener('DOMContentLoaded', () => {
+    // Проверяваме дали сме в страницата с детайли
+    if (document.getElementById('detail-full-title')) {
+        renderBookDetails();
+    }
+    
+    // Ако имаш и логика за списъка в същия файл, добави я тук
+});
+

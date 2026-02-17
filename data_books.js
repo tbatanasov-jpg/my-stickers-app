@@ -288,4 +288,236 @@ let allBooks = [
         additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
         coords: { lat: 42.6207, lng: 25.3973 } 
     },
+    { 
+        id: 'b033', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b033.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b034', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b034.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b035', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b035.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b036', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b036.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+     { 
+        id: 'b037', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b037.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b038', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b038.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b039', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b039.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b040', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b040.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+     { 
+        id: 'b041', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b041.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b042', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b042.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b043', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b043.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b044', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b044.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b045', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b045.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b046', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b046.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b047', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b047.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b048', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b048.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+        { 
+        id: 'b049', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b049.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b050', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b050.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b051', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b051.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b052', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b052.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+         { 
+        id: 'b053', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b053.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b054', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b054.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b054А', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b054А.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b055', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b055.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+        { 
+        id: 'b056', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b056.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+         { 
+        id: 'b057', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b057.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b058', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b058.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
+      { 
+        id: 'b059', title: '- Традиционна българска кухня', location: 'София', 
+        isCollected: false, isWanted: false,
+        imagePath: 'Images/Books/b059.png', 
+        description: 'Магнитна книжка, посветена на най-емблематичните ястия, характерни за България. ',
+        additionalInfo: 'Книжката може да бъде закупена от касите на всички туристически обекти в страната.<br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6908, lng: 23.3359 } 
+    },
+    { 
+        id: 'b060', title: '- Земя на рози', location: 'Казанлък', 
+        isCollected: false, isWanted: false, 
+        imagePath: 'Images/Books/b060.png', 
+        description: 'Магнитна книжка, посветена на най-значителните манастири в България.',
+        additionalInfo: ' Книжката може да бъде закупена от касите на всички туристически обекти в страната. <br><br><br><br><br><br>.'  ,
+        coords: { lat: 42.6207, lng: 25.3973 } 
+    },
  ];

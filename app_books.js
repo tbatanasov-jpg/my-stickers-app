@@ -1251,9 +1251,7 @@ if (descElem) {
     descElem.innerHTML = book.description || "Няма описание.";
 }
 
-    const infoElem = document.getElementById('detail-additional-info');
-    // Променяме от .textContent на .innerHTML
-    infoElem.innerHTML = book.additionalInfo || "Информационното табло е налично на място в обекта.";
+    
 }
 
 // 2. Инициализация при зареждане на страницата
